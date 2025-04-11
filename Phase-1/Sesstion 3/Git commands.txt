@@ -1,0 +1,36 @@
+
+Pupular Git Commands
+---------------------------------------------------
+
+1. Initializing new repository
+> git init
+
+2. add files to stagging
+> git add <filename>
+
+3. adding all files to the stagging
+
+> git add .
+
+4. to create version of file
+> git commit -m "Your Commit Short Message"
+
+5. to check the stagging &commit status
+> git status
+
+6. to check the commit logs 
+> git log
+
+7. to get logs in oneline
+> git log --oneline
+
+8. to create branch
+> git branch <name of branch>
+
+9. to get list of branch
+> git branch 
+
+10. to swicth to the next branch
+> git checkout <name of branch>
+
+11. create two branches and add multiple files in both the branches (make sure you do add and commit before switching to the next) then switch. so you can check the the two branches with different files exist
