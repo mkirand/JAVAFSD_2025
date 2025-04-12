@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo CSS</title>
+    <style>
+        div {
+            background-color: lightblue;
+            padding: 20px;
+        }
+        div p {
+            color: black;
+            font-size: 20px;
+            margin: 10px 0;
+            background-color: lightpink;
+            height: 50px;
+            width: 200px;
+        }
+        .container p:first-child {
+            background-color: lightgreen;
+        }
+        .container p::first-letter {
+            font-size: 30px;
+            color: red;
+        }
+        .container p:first-child::first-letter {
+            font-size: 30px;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+        <h1>CSS Example</h1>
+        <div class="container">
+            <p>Paragraph-1</p>
+            <p>Paragraph-2</p>
+            <p>Paragraph-3</p>
+            <p>Paragraph-4</p>
+            <p>Paragraph-5</p>
+            <p>Paragraph-6</p>
+            <p>Paragraph-7</p>
+        </div>
+        <h1>Second Div</h1>
+        <div>
+            <p>Paragraph-1</p>
+            <p>Paragraph-2</p>
+        </div>
+</body>
+</html>
