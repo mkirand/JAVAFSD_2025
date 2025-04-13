@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HMTL Comment -->
+    <h1>Javascript Function Returns Another Function</h1>
+    <script>
+        // Function that returns another function
+        function outerFunction(a, b) {
+            let sum = a + b; // Calculate the sum of a and b
+            return function innerFunction() {
+                console.log("Sum from the inner function: " + sum); // Access the sum variable from the outer function
+            };
+        }
+
+        // Call the outer function and store the returned inner function
+        const innerFunc = outerFunction(5, 10); // Output: undefined
+
+        // Call the inner function
+        innerFunc(); // Output: Hello from the inner function!
+        
+    </script>
+</body>
+
+</html>
