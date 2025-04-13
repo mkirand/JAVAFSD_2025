@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HMTL Comment -->
+    <h1>Javascript Array Methods</h1>
+    <script>
+        var array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        console.log("Original Array: ", array);
+
+        // 1. Push Method - adds an element to the end of the array:
+        array.push(10);
+        console.log("After Push: ", array);
+
+        // 2. Pop Method - removes the last element from the array:
+        array.pop();
+        console.log("After Pop: ", array);
+
+        // 3. Shift Method - removes the first element from the array:
+        array.shift();  
+        console.log("After Shift: ", array);
+
+        // 4. Unshift Method - adds an element to the beginning of the array:
+        array.unshift(1);
+        console.log("After Unshift: ", array);
+
+        // 5. Replace Method - replaces an element at a specific index:
+        array[5] = 11;
+        console.log("After Replace: ", array);
+
+        // 6. Get Method - retrieves an element at a specific index:   
+        var element = array[2];
+        console.log("Get Element at Index 2: ", element);
+    </script>
+</body>
+
+</html>

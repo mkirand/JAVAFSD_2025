@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HMTL Comment -->
+    <h1>Javascript Rest Parameters</h1>
+    <p>Represented as function add(...num): three dots</p>
+    
+    <script>
+        function sum(...num){
+            var total = 0;
+            for(let i of num){
+                total += i;
+            }
+            return total;
+        }
+        console.log("Sum: " + sum(1, 2 )); // Sum: 15
+        console.log("Sum: " + sum(1, 2, 3, 4, 5)); // Sum: 15
+    </script>
+</body>
+
+</html>
