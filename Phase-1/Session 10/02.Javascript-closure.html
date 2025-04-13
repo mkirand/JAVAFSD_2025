@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HMTL Comment -->
+    <h1>Javascript Closures</h1>
+    <script>
+        function test() {
+           if(true) {
+                var x = 10; // function scope variable
+                let y = 20; // block scope variable, its a closure accessible in the block
+                const z = 30; // block scope constant, its a closure accessible in the block
+            }
+            console.log("var: " + x); // accessible, output: 10
+            console.log("let: " + y); // ReferenceError: y is not defined
+            console.log("const: " + z); // ReferenceError: z is not defined
+        };
+        test(); // function call
+    </script>
+</body>
+
+</html>

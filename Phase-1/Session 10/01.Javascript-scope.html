@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HMTL Comment -->
+    <h1>Javascript Function Scope</h1>
+    <script>
+        function greetings() {
+            var name = "Manoj Kiran Das"; // local variable
+            console.log("Name: " + name); // this will work
+            if(true) {
+                let age = 25; // block scope variable
+                const num = 10; // block scope variable
+                var str = "Hello"; // global scope variable
+                console.log("Str: " + str); // this will work
+                console.log("Age: " + age); // this will work
+                console.log("Num: " + num); // this will work
+                console.log("Name: " + name); // this will work
+            }
+            // console.log("Age: " + age); // this block scope variable will not work
+            // console.log("Num: " + num); // this block scope variable will not work
+            console.log("Str: " + str); // this will work
+        };
+        greetings(); // function call
+    </script>
+</body>
+
+</html>
