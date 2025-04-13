@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HMTL Comment -->
+    <h1>Javascript - Alert</h1>
+   <p>Alert is used to invoke prompts to users to prompt a message are get inputs from them.</p>
+    <script>
+       class Calculator {
+            constructor(a, b) {
+                this.sum = a + b;
+                this.subtraction = a - b;
+                this.multiplication = a * b;
+                this.division = a / b;
+            }
+            add() {
+                alert("Sum: " + this.sum);
+            }
+            minus() {
+                alert("Subtraction: " + this.subtraction);
+            }
+            multiply() {
+                alert("Multiplication: " + this.multiplication);
+            }
+            divide() {
+                alert("Division: " + this.division);
+            }
+        }
+
+        var calculator1 = new Calculator(5, 3);
+        calculator1.add(); // Sum: 8
+        calculator1.minus(); // Subtraction: 2  
+        calculator1.multiply(); // Multiplication: 15
+        calculator1.divide(); // Division: 1.6666666666666667
+
+    </script>
+</body>
+
+</html>

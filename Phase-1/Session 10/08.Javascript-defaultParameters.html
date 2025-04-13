@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HMTL Comment -->
+    <h1>Javascript - Default Parameters</h1>
+    <p>To set default parameters if the params is not passed in function call</p>
+    <p>Example: function sum (a = 0, b = 0)</p>
+    <script>
+        function sum(a = 0, b = 0){
+            console.log("Sum: ", a + b);
+        }
+        sum(1, 2); // Sum: 3
+        sum(5); // Sum: 5;
+    </script>
+</body>
+
+</html>

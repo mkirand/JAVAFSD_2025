@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HMTL Comment -->
+    <h1>Javascript - If And Else If</h1>
+
+    <script>
+       var grade = parseInt(prompt("Enter your grade percentage: ", "0"));
+        if(grade < 0 || grade > 100) {
+            document.write("Invalid grade entered. Please enter a number between 0 and 100.");
+        } else if (grade >= 90) {
+            document.write("Congratulations! You got an A");
+        } else if (grade >= 80) {
+            document.write("Excellent! You got a B.");
+        } else if (grade >= 70) {
+            document.write("Well Done! You got a C.");
+        } else if (grade >= 60) {
+            document.write("Good Job! You got a D.");
+        } else {
+            document.write("Sorry! You got an F.");
+        }
+
+    </script>
+</body>
+
+</html>

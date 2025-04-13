@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HMTL Comment -->
+    <h1>Javascript - Class & Object</h1>
+    <p>In JavaScript, a class is a blueprint for creating objects. It encapsulates data for the object and methods to manipulate that data.</p>
+    <p>Objects are instances of classes. They can have properties (data) and methods (functions) associated with them.</p>
+
+    <script>
+       class Student {
+            constructor(id, name) {
+                this.id = id;
+                this.name = name;
+            }
+            display() {
+                console.log("ID: " + this.id + ", Name: " + this.name);
+            }
+        }
+
+        var student1 = new Student(1, "John Doe");
+        student1.display(); // ID: 1, Name: John Doe
+        var student2 = new Student(2, "Jane Smith");
+        student2.display(); // ID: 2, Name: Jane Smith
+
+    </script>
+</body>
+
+</html>

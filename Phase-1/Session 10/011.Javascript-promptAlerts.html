@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HMTL Comment -->
+    <h1>Javascript - Prompt</h1>
+    <p>Alert is used to invoke prompts to users to prompt a message are get inputs from them.</p>
+    <script>
+        class Calculator {
+            constructor(a, b) {
+                this.a = Number(a); // Convert to number before assignment
+                this.b = Number(b); // Convert to number before assignment
+                this.sum = a + b; // Convert to number before addition
+                this.subtraction = this.a - this.b;
+                this.multiplication = this.a * this.b;
+                this.division = this.a / this.b;
+            }
+            add() {
+                document.write("Sum: " + this.a + " + " + this.b + " = " + this.sum);
+            }
+            minus() {
+                document.write("Subtraction: " + this.a + " - " + this.b + " = " + this.subtraction);
+            }
+            multiply() {
+                document.write("Multiplication: " + this.a + " x " + this.b + " = " + this.multiplication);
+            }
+            divide() {
+                document.write("Division: " + this.a + " / " + this.b + " = " + this.division);
+            }
+        }
+        // Prompting user for input
+        var a = prompt("Enter first number: ", "0");    
+        var b = prompt("Enter second number: ", "0");
+        var calculatorMethod = prompt("Enter the method you want to use: add, minus, multiply, divide", "add");
+
+        var calculator1 = new Calculator(a, b);
+        // Using the method based on user input
+        switch (calculatorMethod) {
+            case "add":
+                calculator1.add();
+                break;
+            case "minus":
+                calculator1.minus();
+                break;
+            case "multiply":
+                calculator1.multiply();
+                break;
+            case "divide":
+                calculator1.divide();
+                break;
+            default:
+                alert("Invalid method selected.");
+        }
+
+    </script>
+</body>
+
+</html>
