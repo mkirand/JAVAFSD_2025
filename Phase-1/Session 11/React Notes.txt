@@ -1,0 +1,20 @@
+***********************************************************
+Instruction
+***********************************************************
+1. Download link:https://nodejs.org/en/download
+2. open >cmd> 
+	> node -v
+	> npm -v
+3. goto >https://vite.dev/guide/
+	search for react installtion
+	> npm create vite@latest
+	> enter: y
+	> give: project-name 
+	> select : react
+	> choose: Javascript
+	> cd project-name
+	> npm install
+4. to run your project
+	> npm run dev
+	
+
