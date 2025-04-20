@@ -7,6 +7,7 @@ import StyleComponent from './components/StyleComponent'
 import Counter from './components/Counter'
 import Toggle from './components/Toggle'
 import Form from './components/Form'
+import MyButton from './components/MyButton'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
       <Counter />
       <Toggle />
       <Form />
+      <MyButton label="Click Me" handleClick={() => alert('Button Clicked!')} />
       <h1>Welcome to React</h1>
     </>
   )
