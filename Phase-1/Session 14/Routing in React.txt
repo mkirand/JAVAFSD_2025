@@ -1,0 +1,112 @@
+
+
+
+
+- when we want to make links based on the links we want to render the components we use Routing
+- by default it wil load home component(app.jsx)
+- but what we want ???
+-----------------------------------
+
+
+HOME---> CLICK HERE TO MOVE TO HOME COMPONENT
+ABOUT--> CLICK HERE TO MOVE TO ABOUT COMPONENT
+LOGIN---> CLICK HERE TO MOVE TO LOGIN COMPONENT
+
+--------------------------------------------------------
+
+TO do thi navigation we need react-router-dom, that we need install additionally in react
+> npm i react-router-dom
+> npm install bootstrap
+
+
+1. create react application
+2. add navbar component
+
+
+
+
+function NavBar() {
+
+    return (
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/home">Simplilearn</a>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/fetch">Users</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/form">Forms</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/counter">Counter</a>
+                        </li>
+                         
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    )
+}
+
+
+export default NavBar;
+
+
+3. import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom' in app.jsx
+
+
+4. restructure your app.jsx like below
+
+import { useEffect, useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import Counter from './components/counter'
+import WelcomeMessage from './components/welcome'
+import FetchData from './components/FetchData'
+import WindowsWidth from './components/windows'
+import FetchData1 from './components/FetchData1'
+import FormValidation from './components/FormValidation'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import NavBar from './components/NavBar'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+
+  return (
+    <BrowserRouter>
+
+      <NavBar />
+
+      <Routes>
+        <Route path='/' element={<Navigate to="/home" replace />}></Route>
+        <Route path='/home' element={<WelcomeMessage />}></Route>
+        <Route path='/fetch' element={<FetchData />}></Route>
+        <Route path='/form' element={<FormValidation />}></Route>
+        <Route path='/counter' element={<Counter />}></Route>
+      </Routes>
+
+    </BrowserRouter>
+  )
+}
+
+export default App
+
+
+
+
+
+
+
+

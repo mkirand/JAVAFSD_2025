@@ -25,7 +25,7 @@ function UsersData() {
     }, []);
 
     return (<table className="table table-striped table-hover table-bordered">
-        <thead class="table-dark text-center">
+        <thead className="table-dark text-center">
             <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Name</th>
@@ -48,11 +48,11 @@ function UsersData() {
                         </tr>
                     )
                 }
-                ) : <tr className="text-center" ><div class="d-flex justify-content-center">
-                    <div class="spinner-border text-warning" role="status">
-                        <span class="visually-hidden">Loading...</span>
+                ) : <div className="d-flex justify-content-center">
+                    <div className="spinner-border text-warning" role="status">
+                        <span className="visually-hidden">Loading...</span>
                     </div>
-                </div></tr>}
+                </div>}
 
         </tbody>
     </table>)
