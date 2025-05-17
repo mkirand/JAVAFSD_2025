@@ -16,7 +16,8 @@ import FormValidation from './components/Session 13/FormValidation'
 import NavBar from './components/Session 13/NavBar';
 import NavBarReactBootstrap from './components/Session 13/NavBarReactBootstrap';
 import GrandParent from './components/propdrilling/GrandParent';
-
+import MyGrandParent from './components/useContextApi/MyGrandParent';
+import ThemeComponent from './components/theme/ThemeComponent';
 
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
           <Route path="/form" element={<FormValidation />} />
           <Route path="/resize" element={<WindowsWidth />} />
           <Route path="/propdrilling" element={<GrandParent />} />
+          <Route path="/context" element={<MyGrandParent />} />
+          <Route path="/theme" element={<ThemeComponent />} />
         </Routes>
       </BrowserRouter>
 

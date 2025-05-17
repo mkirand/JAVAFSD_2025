@@ -18,6 +18,8 @@ function NavBarReactBootstrap() {
                         <Link className="nav-link" to="/form">Form Validation</Link>
                         <Link className="nav-link" to="/resize">Resize</Link>
                         <Link className="nav-link" to="/propdrilling">Prop Drilling</Link>
+                        <Link className="nav-link" to="/context">My Context</Link>
+                        <Link className="nav-link" to="/theme">Theme</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

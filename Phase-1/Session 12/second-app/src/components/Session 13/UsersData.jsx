@@ -24,7 +24,7 @@ function UsersData() {
             })
     }, []);
 
-    return (<table className="table table-striped table-hover table-bordered">
+    return (<table className="userTable table table-striped table-hover table-bordered">
         <thead className="table-dark text-center">
             <tr>
                 <th scope="col">ID</th>
@@ -48,9 +48,9 @@ function UsersData() {
                         </tr>
                     )
                 }
-                ) : <div className="d-flex justify-content-center">
-                    <div className="spinner-border text-warning" role="status">
-                        <span className="visually-hidden">Loading...</span>
+                ) : <div className="overlay-spinner text-center margin-top-5">
+                    <div className="spinner-border" role="status">
+                        <span className="sr-only"></span>
                     </div>
                 </div>}
 

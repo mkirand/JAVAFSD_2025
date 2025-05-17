@@ -43,3 +43,17 @@
 .read-the-docs {
   color: #888;
 }
+
+.userTable tbody {
+  position: relative;
+}
+
+.userTable tbody .overlay-spinner {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  /* Ensure the spinner is above the table content */
+}
