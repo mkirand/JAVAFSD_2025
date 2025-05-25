@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": "c047",
+      "title": "First Post",
+      "description": "And some small print.",
+      "author": "Manoj Kiran Das",
+      "date": "2025-05-24T17:04:47.336Z"
+    },
+    {
+      "id": "d95f",
+      "title": "First Post",
+      "description": "And some small print.",
+      "author": "Manoj Kiran Das",
+      "date": "2025-05-24T17:04:50.783Z"
+    },
+    {
+      "id": "9b25",
+      "title": "First Post",
+      "description": "And some small print.",
+      "author": "Manoj Kiran Das",
+      "date": "2025-05-24T17:04:54.007Z"
+    },
+    {
+      "id": "359e",
+      "title": "First Post",
+      "description": "And some small print.",
+      "author": "Manoj Kiran Das",
+      "date": "2025-05-24T17:29:58.851Z"
+    },
+    {
+      "id": "9b49",
+      "title": "First Post",
+      "description": "And some small print.",
+      "author": "Manoj Kiran Das",
+      "date": "2025-05-24T17:29:59.846Z"
+    },
+    {
+      "id": "3965",
+      "title": "First Post",
+      "description": "And some small print.",
+      "author": "Manoj Kiran Das",
+      "date": "2025-05-24T17:30:00.664Z"
+    }
+  ]
+}

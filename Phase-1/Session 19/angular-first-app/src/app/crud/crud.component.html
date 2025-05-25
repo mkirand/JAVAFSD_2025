@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row" class="mt-4">
+        <div class="col-md-6 offset-3">
+            <h5>Posts</h5>
+            <div class="list-group">
+                <a href="#" *ngFor="let post of posts; index as i" class="list-group-item list-group-item-action"
+                    aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">{{post.title}}</h5>
+                        <small>{{post.date}}</small>
+                    </div>
+                    <p class="mb-1">{{post.description}}</p>
+                    <small>{{post.author}}</small>
+                </a>
+            </div>
+
+            <button class="btn btn-success mt-4" (click)="addPost()">Add Post</button>
+        </div>
+    </div>
+</div>

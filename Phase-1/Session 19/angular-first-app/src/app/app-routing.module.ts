@@ -8,6 +8,8 @@ import { ChildAComponent } from './child-a/child-a.component';
 import { ChildBComponent } from './child-b/child-b.component';
 import { TformComponent } from './tform/tform.component';
 import { RformComponent } from './rform/rform.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { CrudComponent } from './crud/crud.component';
 
 const routes: Routes = [
   { path: "", component: HeaderComponent },
@@ -21,7 +23,9 @@ const routes: Routes = [
       { path: "child-a", component: ChildAComponent },
       { path: "child-b", component: ChildBComponent }
     ]
-  }
+  },
+  { path: "users", component: UserListComponent },
+  { path: "crud", component: CrudComponent },
 ];
 
 @NgModule({
